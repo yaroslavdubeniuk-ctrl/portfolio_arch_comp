@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" style="height: 100%; margin: 0; padding: 0;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title>Portfolio Access</title>
+    <style>
+      /* --- PRELOADER STYLES --- */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F5F5F5; /* Matches your body background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+
+      /* Custom scrollbar to keep the clean aesthetic if content overflows the 60vh height */
+      .scroll-container::-webkit-scrollbar {
+        width: 6px;
+      }
+      .scroll-container::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .scroll-container::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      
+      /* Elegant placeholder styling for the password input */
+      .elegant-input::placeholder {
+        color: #A3A3A3;
+        font-weight: 400;
+      }
+      .elegant-input:focus {
+        outline: none;
+        border-color: #FF0000 !important;
+        box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.1);
+      }
+
+      /* Red Hover Effect for Buttons */
+      .elegant-btn {
+        background-color: #000000 !important;
+        transition: all 0.25s ease-in-out !important;
+      }
+      .elegant-btn:hover {
+        background-color: #FF0000 !important;
+        box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.40) !important;
+      }
+    </style>
+  </head>
+
+  <body style="margin:0; padding:0; background:#F5F5F5; display:flex; justify-content:center; align-items:center; min-height:100vh; height:100%;">
+    
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" 
+      style="width:40vw; height:80vh; max-width:800px; background:#FFFFFF; border-radius:60px; box-shadow: 0px 20px 50px rgba(0,0,0,0.05); overflow:hidden;">
+      <tr>
+        <td valign="top" style="padding:0; height:100%;">
+          
+          <div class="scroll-container" style="height:100%; overflow-y:auto; box-sizing:border-box; padding:80px 90px 90px 90px; display:flex; flex-direction:column;">
+          
+          <div style="width:100%;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding:0;">
+                  <div
+                    style="color:#1A1A1A;font-size:34px;line-height:1.15;font-weight:700;
+                    font-family:'Satoshi Variable',Satoshi,Inter,Arial,Helvetica,sans-serif;">
+                    <span style="color:#1A1A1A;font-size:20px;line-height:2;font-weight:300;
+                    font-family:'Satoshi Variable',Satoshi,Inter,Arial,Helvetica,sans-serif;">Univercity College London</span><br/>Msc Architectural Computation
+                  </div>
+                  <div style="height:20px;line-height:20px;font-size:1px;"> </div>
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>
+                        <div
+                          style="
+                            width:35px;
+                            height:5px;
+                            background:#FF0000;
+                            box-shadow:0px 10px 20px rgba(255,0,0,0.40);
+                          "
+                        ></div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <div style="height:44px;line-height:44px;font-size:1px;"> </div>
+
+            <div
+              style="color:#797979;font-size:16px;line-height:28px;letter-spacing:0.64px;font-weight:150;
+              font-family:'Author Variable',Author,Inter,Arial,Helvetica,sans-serif;">
+              Applicant name: <span style="color:#000000;font-weight:400;">Yaroslav Dubeniuk</span>
+              </br>Application ID: <span style="color:#000000;font-weight:400;">26185600</span>
+            </div>
+
+            <div style="height:46px;line-height:46px;font-size:1px;"> </div>
+
+            <div
+              style="color:#000000;font-size:16px;line-height:28px;letter-spacing:0.64px;font-weight:596;
+              font-family:'Author Variable',Author,Inter,Arial,Helvetica,sans-serif;">
+              Please enter your credentials below
+            </div>
+
+            <div style="height:20px;line-height:44px;font-size:1px;"> </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-bottom: 12px;">
+                  <input 
+                    type="name" 
+                    placeholder="Votre nom" 
+                    class="elegant-input"
+                    style="
+                      width: 100%;
+                      box-sizing: border-box;
+                      padding: 18px 22px;
+                      background: #FFFFFF;
+                      border: 1px solid rgba(0,0,0,0.08);
+                      border-radius: 16px;
+                      color: #000000;
+                      font-size: 16px;
+                      font-weight: 500;
+                      font-family: 'Satoshi Variable',Satoshi,Inter,Arial,Helvetica,sans-serif;
+                      letter-spacing: 0.5px;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 24px;">
+                  <input 
+                    type="password" 
+                    placeholder="Votre identifiant" 
+                    class="elegant-input"
+                    style="
+                      width: 100%;
+                      box-sizing: border-box;
+                      padding: 18px 22px;
+                      background: #FFFFFF;
+                      border: 1px solid rgba(0,0,0,0.08);
+                      border-radius: 16px;
+                      color: #000000;
+                      font-size: 16px;
+                      font-weight: 500;
+                      font-family: 'Satoshi Variable',Satoshi,Inter,Arial,Helvetica,sans-serif;
+                      letter-spacing: 0.5px;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  />
+                </td>
+              </tr>
+            </table>
+
+          </div>
+          <div style="width:100%; margin-top:auto;">
+
+            <div style="height:44px;line-height:44px;font-size:1px;"> </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">            
+                <td>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                    class="elegant-btn"
+                    style="border-radius:16px;overflow:hidden;box-shadow:0px 22px 90px rgba(0,0,0,0.25);">
+                    <tr>
+                      <td bgcolor="#000000" style="border-radius:16px; background: inherit;">
+                        <a href="#"
+                           target="_blank"
+                           style="
+                             display:block;
+                             padding:18px 22px;
+                             color:#FFFFFF;
+                             font-size:18px;
+                             font-weight:700;
+                             font-family:'Satoshi Variable',Satoshi,Inter,Arial,Helvetica,sans-serif;
+                             text-decoration:none;
+                           ">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td align="left">Portfolio Review</td>
+                              <td align="right" width="30" valign="middle">
+                                 <img width="30" height="30" src="https://lh3.googleusercontent.com/pw/AP1GczP5IelOyObTb-iS97a__8IJT0jUPw4R4oaOEc8KaMZPMjlP_FaGDPZeoQ63UBEzzW4YaiL13j_IA17yLcB-hBGNZMdnbdvxbRQdt-J1feyyQf8twxvJXO-sp_XHBSuKS7tjMVvEflOGpSTEcC4LVbV-=w90-h90-s-no" alt="">
+                              </td>
+                            </tr>
+                          </table>
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      window.addEventListener('load', function() {
+        var preloader = document.getElementById('preloader');
+        preloader.style.opacity = '0';
+        setTimeout(function() {
+          preloader.style.visibility = 'hidden';
+        }, 500); // Smoothly drops visibility off canvas right after fade transition
+      });
+    </script>
+
+  </body>
+</html>
